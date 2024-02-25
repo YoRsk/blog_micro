@@ -1,7 +1,7 @@
 blog-service:
   url: http://blog:8081
-comment-service:
-  url: http://comment:8082
+#comment-service:
+#  url: http://comment:8082
 
 server:
   port: 8082
@@ -41,7 +41,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://service-reg:8761/eureka
+      defaultZone: http://service-registry:8761/eureka
 
 #Zipkin
 management:
