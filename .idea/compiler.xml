@@ -9,6 +9,7 @@
         <module name="service-reg" />
         <module name="comment-ms" />
         <module name="configserver" />
+        <module name="blog" />
         <module name="gateway" />
         <module name="search-ms" />
       </profile>
@@ -16,6 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="blog" options="-parameters" />
       <module name="comment-ms" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="gateway" options="-parameters" />
