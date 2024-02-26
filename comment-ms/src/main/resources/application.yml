@@ -1,7 +1,7 @@
 blog-service:
     url: http://localhost:8081
-comment-service:
-    url: http://localhost:8082
+#comment-service:
+#    url: http://localhost:8082
 
 server:
   port: 8082

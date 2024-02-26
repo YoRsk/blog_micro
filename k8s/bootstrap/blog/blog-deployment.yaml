@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blog
+  labels: # assigned to the deployment itself
+    app: blog
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: blog
+      labels: # assigned to the pods created by the deployment.
+      # These are actually called PodTemplate labels.
+        app: blog
+    spec:
+      containers:
+        - name: blog
+          image: pengliuyi/blog-ms:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: k8s
+      restartPolicy: Always
+  selector:
+    matchLabels: # decides on which Pods belongs to the given Deployment
+      app: blog

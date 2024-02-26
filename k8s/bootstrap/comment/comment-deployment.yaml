@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: comment
+  labels:
+    app: comment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: comment
+      labels:
+        app: comment
+    spec:
+      containers:
+        - name: comment
+          image: pengliuyi/comment-ms:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8082
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: k8s
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: comment
