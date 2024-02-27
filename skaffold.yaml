@@ -1,0 +1,32 @@
+apiVersion: skaffold/v2beta24
+kind: Config
+deploy:
+  kubectl:
+    manifests:
+      - k8s/bootstrap/blog/*.yaml
+#      - k8s/bootstrap/comment/*.yaml
+      - k8s/services/mysql/*.yaml  # 根据你的服务结构适当修改
+#      - k8s/services/rabbitmq/*.yaml  # 根据你的服务结构适当修改
+#      - k8s/services/zipkin/*.yaml  # 根据你的服务结构适当修改
+      - k8s/*.yaml  # 如果k8s目录下还有其他配置文件
+
+build:
+    local:
+      push: false
+    artifacts:
+      - image: pengliuyi/blog-ms
+        context: blog-ms
+        docker:
+          dockerfile: Dockerfile
+        sync:
+          manual:
+            - src: "src/**/*.java"
+              dest: .
+      - image: pengliuyi/front-end
+        context: front-end
+        docker:
+          dockerfile: Dockerfile
+        sync:
+          manual:
+            - src: "**/*.{ts,tsx}"
+              dest: .

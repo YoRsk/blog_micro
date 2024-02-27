@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: mysql-config
 data:
-  MYSQL_DATABASE: "db_blog"
-  MYSQL_USER: "root"
-  MYSQL_PASSWORD: "root"
+  MYSQL_DATABASE: "k8sdb_blog"
+  MYSQL_ROOT_PASSWORD: "root"
+#  MYSQL_USER: "root"
+#  MYSQL_PASSWORD: "root"

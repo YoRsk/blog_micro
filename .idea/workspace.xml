@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="k8s yaml" />
+    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="k8s yaml">
+      <change afterPath="$PROJECT_DIR$/front-end/app/page1.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/bootstrap/blog/blog-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/bootstrap/blog/blog-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/front-end-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/front-end-depl.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/mysql/configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/services/mysql/configmap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/mysql/statefulset.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/services/mysql/statefulset.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Dockerfile" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -23,7 +44,7 @@
         <entry key="$PROJECT_DIR$" value="a6383ccf0234247cd4272fb38dc9994d59a6f94f" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/blog-ms" />
     <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="KubernetesApiProvider">{
@@ -41,34 +62,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/liuyi/blog_micro/blog-ms/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "ts.external.directory.path": "C:\\Users\\liuyi\\blog_micro\\front-end\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/liuyi/blog_micro/front-end/app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\liuyi\\blog_micro\\front-end\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql_aurora_aws",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql_aurora_aws&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuyi\blog_micro\front-end\app" />
       <recent name="C:\Users\liuyi\blog_micro\blog-ms\src\main\resources" />
       <recent name="C:\Users\liuyi\blog_micro\comment-ms\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liuyi\blog_micro" />
+      <recent name="C:\Users\liuyi\blog_micro\front-end\app" />
+      <recent name="C:\Users\liuyi\blog_micro\front-end\pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,7 +170,9 @@
       <workItem from="1708842763811" duration="706000" />
       <workItem from="1708848539027" duration="2858000" />
       <workItem from="1708855260218" duration="159000" />
-      <workItem from="1708855431186" duration="8587000" />
+      <workItem from="1708855431186" duration="13958000" />
+      <workItem from="1708941942069" duration="3697000" />
+      <workItem from="1708958199089" duration="14149000" />
     </task>
     <task id="LOCAL-00001" summary="reduce the database config in application.yml">
       <option name="closed" value="true" />
@@ -201,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708936511922</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="k8s yaml">
+      <option name="closed" value="true" />
+      <created>1708936768544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708936768544</updated>
+    </task>
+    <task id="LOCAL-00009" summary="k8s yaml">
+      <option name="closed" value="true" />
+      <created>1708936889797</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708936889797</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

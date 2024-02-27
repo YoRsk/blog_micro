@@ -16,10 +16,12 @@ spec:
       containers:
         - name: blog
           image: pengliuyi/blog-ms:latest
-          imagePullPolicy: Always
+          # ALWAYS will always pull the image from the docker remote registry
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
           env:
+            # here define it use application-k8s.yml
             - name: SPRING_PROFILES_ACTIVE
               value: k8s
       restartPolicy: Always

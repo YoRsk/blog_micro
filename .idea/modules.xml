@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/blog-ms/blog.iml" filepath="$PROJECT_DIR$/blog-ms/blog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/blog_micro.iml" filepath="$PROJECT_DIR$/.idea/blog_micro.iml" />
       <module fileurl="file://$PROJECT_DIR$/comment-ms/comment-ms.iml" filepath="$PROJECT_DIR$/comment-ms/comment-ms.iml" />
     </modules>
