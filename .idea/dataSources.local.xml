@@ -14,7 +14,25 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="db_blog@mysql" uuid="c0f57db7-75fb-4861-9f8a-2904d4fc6f9d">
+    <data-source name="b_comment@localhost" uuid="c0f57db7-75fb-4861-9f8a-2904d4fc6f9d">
+      <database-info product="MySQL" version="8.2.0" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.2.0" exact-driver-version="8.0">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="k8sdb_blog@mysql" uuid="8705aa87-74dd-4b41-a0d0-e3e91c0299de">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="dockerdb-blog@mysql" uuid="cf8e4f0a-e775-42be-8a44-2f4b1c6c3795">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
       <user-name>root</user-name>
       <schema-mapping />

@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="debug deployment of mysql for k8s">
+    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="build docker to all of ms&#10;current issue: missing table t_blog">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment-ms/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blog_micro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog_micro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Blog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/TagServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/resources/application-k8s.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/services/mysql/configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/services/mysql/configmap.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Dockerfile" />
         <option value="TypeScript JSX File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -31,6 +51,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/blog-ms" />
     <option name="RESET_MODE" value="SOFT" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -49,17 +70,38 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.blog-ms.blog-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog-ms.config-server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog-ms.db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog-ms.gateway: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog-ms.rabbitmq: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog-ms.service-registry: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog-ms.zipkin: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.service-reg/Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BlogApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CommentMsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ServiceRegApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/liuyi/blog_micro/front-end/app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/liuyi/blog_micro&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5873563&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\liuyi\\blog_micro\\front-end\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -71,8 +113,12 @@
     ]
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liuyi\blog_micro" />
       <recent name="C:\Users\liuyi\blog_micro\front-end\app" />
       <recent name="C:\Users\liuyi\blog_micro\blog-ms\src\main\resources" />
       <recent name="C:\Users\liuyi\blog_micro\comment-ms\src\main\resources" />
@@ -92,9 +138,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
-    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="blog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.lrm.BlogApplication" />
       <method v="2">
@@ -136,6 +181,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="blog-ms.blog-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="blog-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="blog-ms/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="blog-ms.gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="gateway" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="blog-ms/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="blog-ms.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="blog-ms/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="blog-ms.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zipkin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="blog-ms/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BlogApplication" />
+        <item itemvalue="Docker.blog-ms.gateway: Compose Deployment" />
+        <item itemvalue="Docker.blog-ms.blog-service: Compose Deployment" />
+        <item itemvalue="Docker.blog-ms.rabbitmq: Compose Deployment" />
+        <item itemvalue="Docker.blog-ms.zipkin: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -158,7 +276,8 @@
       <workItem from="1708855431186" duration="13958000" />
       <workItem from="1708941942069" duration="3697000" />
       <workItem from="1708958199089" duration="15210000" />
-      <workItem from="1709101273712" duration="3411000" />
+      <workItem from="1709101273712" duration="22052000" />
+      <workItem from="1709128995430" duration="561000" />
     </task>
     <task id="LOCAL-00001" summary="reduce the database config in application.yml">
       <option name="closed" value="true" />
@@ -240,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709034755100</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="blog-ms debug&#10;current issue: missing table t_blog">
+      <option name="closed" value="true" />
+      <created>1709105156141</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709105156141</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +405,7 @@
     <MESSAGE value="k8s" />
     <MESSAGE value="k8s yaml" />
     <MESSAGE value="debug deployment of mysql for k8s" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug deployment of mysql for k8s" />
+    <MESSAGE value="blog-ms debug&#10;current issue: missing table t_blog" />
+    <option name="LAST_COMMIT_MESSAGE" value="blog-ms debug&#10;current issue: missing table t_blog" />
   </component>
 </project>

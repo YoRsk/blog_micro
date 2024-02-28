@@ -1009,7 +1009,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="292" parent="1" name="b">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-02-25.10:05:02</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-02-28.07:43:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="293" parent="1" name="news">
@@ -1179,7 +1179,7 @@ COMPACT</Options>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="327" parent="300" name="id">
-      <AutoIncrement>6</AutoIncrement>
+      <AutoIncrement>5</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1306,7 +1306,7 @@ COMPACT</Options>
       <Type>btree</Type>
     </index>
     <column id="355" parent="302" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1377,7 +1377,7 @@ COMPACT</Options>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="371" parent="303" name="id">
-      <AutoIncrement>17</AutoIncrement>
+      <AutoIncrement>16</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1397,7 +1397,7 @@ COMPACT</Options>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="375" parent="304" name="id">
-      <AutoIncrement>8</AutoIncrement>
+      <AutoIncrement>7</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1418,7 +1418,7 @@ COMPACT</Options>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="379" parent="305" name="id">
-      <AutoIncrement>139</AutoIncrement>
+      <AutoIncrement>138</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
