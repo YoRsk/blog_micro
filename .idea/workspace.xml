@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="k8s yaml">
-      <change afterPath="$PROJECT_DIR$/front-end/app/page1.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="debug deployment of mysql for k8s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Comment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-ms/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/resources/application-k8s.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/resources/application-k8s.yml" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/resources/application-k8s.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/bootstrap/blog/blog-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/bootstrap/blog/blog-deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/front-end-depl.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/front-end-depl.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/services/mysql/configmap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/services/mysql/configmap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/k8s/services/mysql/statefulset.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/services/mysql/statefulset.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +157,8 @@
       <workItem from="1708855260218" duration="159000" />
       <workItem from="1708855431186" duration="13958000" />
       <workItem from="1708941942069" duration="3697000" />
-      <workItem from="1708958199089" duration="14149000" />
+      <workItem from="1708958199089" duration="15210000" />
+      <workItem from="1709101273712" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="reduce the database config in application.yml">
       <option name="closed" value="true" />
@@ -246,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708936889797</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="debug deployment of mysql for k8s">
+      <option name="closed" value="true" />
+      <created>1709034755100</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709034755100</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +277,7 @@
     <MESSAGE value="add front-end next.js" />
     <MESSAGE value="k8s" />
     <MESSAGE value="k8s yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="k8s yaml" />
+    <MESSAGE value="debug deployment of mysql for k8s" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug deployment of mysql for k8s" />
   </component>
 </project>
