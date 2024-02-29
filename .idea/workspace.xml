@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="build all of ms in docker and debug&#10;current issue: missing table t_blog&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="fine tune comment service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/interceptor/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/interceptor/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/service/impl/CommentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -30,7 +31,7 @@
         <entry key="$PROJECT_DIR$" value="a6383ccf0234247cd4272fb38dc9994d59a6f94f" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/blog-ms" />
     <option name="RESET_MODE" value="SOFT" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -87,6 +88,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5873563",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "ts.external.directory.path": "C:\\Users\\liuyi\\blog_micro\\front-end\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -111,6 +113,9 @@
       <recent name="C:\Users\liuyi\blog_micro" />
       <recent name="C:\Users\liuyi\blog_micro\front-end\app" />
       <recent name="C:\Users\liuyi\blog_micro\front-end\pages" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lrm.controller.clients" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -256,7 +261,7 @@
       <workItem from="1708941942069" duration="3697000" />
       <workItem from="1708958199089" duration="15210000" />
       <workItem from="1709101273712" duration="22052000" />
-      <workItem from="1709128995430" duration="2253000" />
+      <workItem from="1709128995430" duration="15969000" />
     </task>
     <task id="LOCAL-00001" summary="reduce the database config in application.yml">
       <option name="closed" value="true" />
@@ -354,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709129688618</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="solve the problem that docker-compose in blog-ms be deployed automatically &#10;current issue: missing table t_blog">
+      <option name="closed" value="true" />
+      <created>1709131396760</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709131396760</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,8 +406,11 @@
     <MESSAGE value="k8s yaml" />
     <MESSAGE value="debug deployment of mysql for k8s" />
     <MESSAGE value="blog-ms debug&#10;current issue: missing table t_blog" />
-    <MESSAGE value="build all of ms in docker and debug&#10;current issue: missing table t_blog&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'" />
-    <option name="LAST_COMMIT_MESSAGE" value="build all of ms in docker and debug&#10;current issue: missing table t_blog&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'" />
+    <MESSAGE value="build all of ms in docker and debug&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'" />
+    <MESSAGE value="solve the problem that docker-compose in blog-ms be deployed automatically &#10;current issue: missing table t_blog" />
+    <MESSAGE value="build all of ms in docker and debug&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'" />
+    <MESSAGE value="fine tune comment service" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine tune comment service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -403,6 +419,10 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/CommentController.java</url>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

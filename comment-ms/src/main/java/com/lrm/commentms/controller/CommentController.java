@@ -1,14 +1,11 @@
 package com.lrm.commentms.controller;
-//import com.lrm.commentms.external.User;
 import com.lrm.commentms.messaging.CommentMessageProducer;
 import com.lrm.commentms.po.Comment;
 import com.lrm.commentms.service.CommentService;
-import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,15 +14,12 @@ import java.util.List;
 @RequestMapping("/comment")
 public class
 CommentController {
-
+    // http status pushed in CONTROLLER is better
     @Autowired
     private CommentService commentService;
 
     @Autowired
     private CommentMessageProducer commentMessageProducer;
-
-//    @Autowired
-//    private BlogService blogService;
 
     @Value("${comment.touristAvatar}")
     private String touristAvatar;
@@ -40,19 +34,25 @@ CommentController {
 
     @PostMapping
     public ResponseEntity<String> post(@RequestBody Comment comment, @RequestParam Long blogId) {
-        //User user = (User) session.getAttribute("user");
-        //TODO: get user
-        // 模拟用户信息获取，实际项目中应从安全上下文或会话中获取
-        Long userId = 1L; // 示例用户ID
-        String avatar = userId != null ? userAvatar : touristAvatar;
+        try{
+            //User user = (User) session.getAttribute("user");
+            //TODO: get user
+            // 模拟用户信息获取，实际项目中应从安全上下文或会话中获取
+            Long userId = 1L; // 示例用户ID
+            String avatar = userId != null ? userAvatar : touristAvatar;
 
-        comment.setUserId(userId);
-        comment.setAvatar(avatar);
-        comment.setBlogId(blogId);
+            comment.setUserId(userId);
+            comment.setAvatar(avatar);
+            comment.setBlogId(blogId);
 
-        commentMessageProducer.sendCommentMessage(comment);
-        return new ResponseEntity<>("Comment is being processed", HttpStatus.ACCEPTED);
+            commentMessageProducer.sendCommentMessage(comment);
+            return new ResponseEntity<>("Comment is being processed", HttpStatus.ACCEPTED);
+        }catch (Exception e){
+            return new ResponseEntity<>("Comment Added Failed", HttpStatus.NOT_FOUND);
+        }
+
     }
+
 //        boolean isCommentSaved = commentService.saveComment(blogId, comment);
 //        if(isCommentSaved){
 //            return new ResponseEntity<>("Comment Added Successfully", HttpStatus.OK);

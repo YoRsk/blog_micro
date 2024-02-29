@@ -6,13 +6,10 @@ import com.lrm.commentms.dto.CommentDTO;
 import com.lrm.commentms.external.Blog;
 import com.lrm.commentms.po.Comment;
 import com.lrm.commentms.service.CommentService;
-import org.hibernate.Session;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,10 +19,7 @@ import java.util.Optional;
 @Service
 public class CommentServiceImpl implements CommentService {
     private final CommentRepository commentRepository;
-
-//    @Autowired
-//    RestTemplate restTemplate;
-    private BlogClient blogClient;
+    private final BlogClient blogClient;
 
     public CommentServiceImpl(CommentRepository commentRepository, BlogClient blogClient) {
         this.blogClient = blogClient;
@@ -60,17 +54,21 @@ public class CommentServiceImpl implements CommentService {
         return commentRepository.findById(id);
     }
 
+    /* Private Function Block ↓ */
+
+
+
+
     /**
      * CommentWithBlogDTO
-     *
      */
     private CommentDTO convertToDTO(Comment comment) {
         Blog blog = blogClient.getBlog(comment.getBlogId());
         CommentDTO commentDTO = new CommentDTO();
         commentDTO.setComment(comment);
         commentDTO.setBlog(blog);
-//                restTemplate.getForObject(
-//                        "http://BLOG-SERVICE:8081/blog/" + comment.getBlogId(), Blog.class));
+/*                restTemplate.getForObject(
+                        "http://BLOG-SERVICE:8081/blog/" + comment.getBlogId(), Blog.class));*/
         return commentDTO;
     }
     /**
@@ -92,10 +90,9 @@ public class CommentServiceImpl implements CommentService {
         return commentsView;
 //                .stream().toList();
     }
-
     /**
      * @param comments root根节点，blog不为空的对象集合
-     * @return 评论的各层子代集合
+     * return 评论的各层子代集合
      */
     private void combineChildren(List<Comment> comments) {
 
@@ -111,7 +108,6 @@ public class CommentServiceImpl implements CommentService {
             tempReplys = new ArrayList<>();
         }
     }
-
     //存放迭代找出的所有子代的集合
     private List<Comment> tempReplys = new ArrayList<>();
 
@@ -119,7 +115,7 @@ public class CommentServiceImpl implements CommentService {
      * 递归迭代，剥洋葱
      *
      * @param comment 被迭代的对象
-     * @return 递归迭代
+     * return 递归迭代
      */
     private void recursively(Comment comment) {
         tempReplys.add(comment);//顶节点添加到临时存放集合
