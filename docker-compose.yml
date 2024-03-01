@@ -15,6 +15,7 @@ services:
 #      SERVER_PORT: 8081 # Not sure
 #      TZ: Asia/Tokyo # Change all the time zone to your own
 
+
     depends_on:
       - db
       - service-registry
