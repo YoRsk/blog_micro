@@ -5,11 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="fine tune comment service">
+      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/old/OldIndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/BlogDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/TypeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/interceptor/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/interceptor/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/interceptor/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/interceptor/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/po/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/app/page1.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/next.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +113,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.5873563",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "inlay.hints",
     "ts.external.directory.path": "C:\\Users\\liuyi\\blog_micro\\front-end\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -115,6 +140,7 @@
       <recent name="C:\Users\liuyi\blog_micro\front-end\pages" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lrm.controller" />
       <recent name="com.lrm.controller.clients" />
     </key>
   </component>
@@ -229,6 +255,18 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.blog-ms.blog-service: Compose Deployment" />
+      <item itemvalue="Docker.blog-ms.gateway: Compose Deployment" />
+      <item itemvalue="Docker.blog-ms.rabbitmq: Compose Deployment" />
+      <item itemvalue="JUnit.All in blog" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.CommentMsApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.SearchMsApplication" />
+      <item itemvalue="Spring Boot.ServiceRegApplication" />
+      <item itemvalue="Spring Boot.BlogApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.BlogApplication" />
@@ -261,7 +299,7 @@
       <workItem from="1708941942069" duration="3697000" />
       <workItem from="1708958199089" duration="15210000" />
       <workItem from="1709101273712" duration="22052000" />
-      <workItem from="1709128995430" duration="15969000" />
+      <workItem from="1709128995430" duration="32955000" />
     </task>
     <task id="LOCAL-00001" summary="reduce the database config in application.yml">
       <option name="closed" value="true" />
@@ -367,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709131396760</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fine tune comment service">
+      <option name="closed" value="true" />
+      <created>1709209645961</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709209645961</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,8 +455,8 @@
     <MESSAGE value="build all of ms in docker and debug&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'" />
     <MESSAGE value="solve the problem that docker-compose in blog-ms be deployed automatically &#10;current issue: missing table t_blog" />
     <MESSAGE value="build all of ms in docker and debug&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'" />
-    <MESSAGE value="fine tune comment service" />
-    <option name="LAST_COMMIT_MESSAGE" value="fine tune comment service" />
+    <MESSAGE value="fine tune blog service" />
+    <option name="LAST_COMMIT_MESSAGE" value="fine tune blog service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
