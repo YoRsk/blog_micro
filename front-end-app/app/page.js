@@ -4,12 +4,11 @@ import Link from 'next/link';
 import 'semantic-ui-css/semantic.min.css'
 import { Button } from 'semantic-ui-react';
 import BlogList from '../components/BlogList'; 
+import RightSideList from '../components/RightSideList';
 // function MyComponent() {
 //   return <Button>Click Me</Button>;
 // }
 export default function Home() {
-
-
   return (
     <>
       <Head>
@@ -28,13 +27,14 @@ export default function Home() {
       <div className="m-container m-padded-tb-big animated fadeIn">
         <div className="ui container">
           <div className="ui stackable grid">
-            
             {/* Left Blog List */}
             <BlogList />
 
             {/* Right Side Top Content */}
             <div className="five wide column">
+              <RightSideList />
               {/* Additional components like Categories, Tags, etc. */}
+              {/* Components, Category ,Tag, Recommended */}
             </div>
           </div>
         </div>
@@ -47,9 +47,7 @@ export default function Home() {
       <footer className="ui inverted vertical segment m-padded-tb-massive">
         {/* Footer content or components */}
       </footer>
-
-      {/* Semantic UI and jQuery scripts */}
-      {/* Consider removing jQuery and using React alternatives */}
     </>
   );
+
 }
