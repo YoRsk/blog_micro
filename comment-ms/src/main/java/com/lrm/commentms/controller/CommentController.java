@@ -52,7 +52,6 @@ CommentController {
         }
 
     }
-
 //        boolean isCommentSaved = commentService.saveComment(blogId, comment);
 //        if(isCommentSaved){
 //            return new ResponseEntity<>("Comment Added Successfully", HttpStatus.OK);

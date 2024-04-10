@@ -4,10 +4,10 @@ deploy:
   kubectl:
     manifests:
       - k8s/bootstrap/blog/*.yaml
-#      - k8s/bootstrap/comment/*.yaml
-      - k8s/services/mysql/*.yaml  # 根据你的服务结构适当修改
-#      - k8s/services/rabbitmq/*.yaml  # 根据你的服务结构适当修改
-#      - k8s/services/zipkin/*.yaml  # 根据你的服务结构适当修改
+      - k8s/bootstrap/comment/*.yaml
+#      - k8s/services/mysql/*.yaml  # 根据你的服务结构适当修改
+      - k8s/services/rabbitmq/*.yaml  # 根据你的服务结构适当修改
+      - k8s/services/zipkin/*.yaml  # 根据你的服务结构适当修改
       - k8s/*.yaml  # 如果k8s目录下还有其他配置文件
 
 build:

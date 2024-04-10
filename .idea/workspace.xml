@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="Connect Next.Js frontend in homepage, adjust Controller logic">
-      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/BlogListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/TagListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/TypeListDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/mapper/ObjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end-app/app/backup/page_backup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end-app/app/backup/page_new.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end-app/components/RightSideList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6ee84929-e782-49b8-944f-e8ece19122f0.xml" afterDir="false" />
+    <list default="true" id="4653e8d5-3d95-4693-87e3-b9f098b78db7" name="Changes" comment="revise the k8s for aws">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/TagShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/TagShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/TypeShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/controller/TypeShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/BlogDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/BlogDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/TypeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/dto/TypeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/BlogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/TagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/TypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/BlogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/TagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/TypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ms/src/main/java/com/lrm/service/impl/TypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end-app/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end-app/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end-app/app/page_backup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end-app/app/page_new.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end-app/components/BlogList.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end-app/components/BlogList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/blog-dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/blog-dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/comment-ms/src/main/java/com/lrm/commentms/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +59,13 @@
     &quot;Docker.blog-ms.rabbitmq: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.blog-ms.service-registry: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.blog-ms.zipkin: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.blog-ms/Dockerfile.executor&quot;: &quot;Run&quot;,
     &quot;Docker.blog: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.service-reg/Dockerfile.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.All in blog.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.blog [org.apache.maven.plugins:maven-jar-plugin:3.3.0:help].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.blog [org.apache.maven.plugins:maven-jar-plugin:3.3.0:jar].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.blog [org.springframework.boot:spring-boot-maven-plugin:3.2.2:build-image].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -93,11 +77,12 @@
     &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.ServiceRegApplication.executor&quot;: &quot;Run&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/liuyi/blog_micro/front-end-app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/liuyi/codeGame&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -108,14 +93,14 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.5873563&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\liuyi\\blog_micro\\front-end\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora_aws&quot;,
-      &quot;mysql&quot;
+      &quot;mysql&quot;,
+      &quot;mysql_aurora_aws&quot;
     ]
   }
 }</component>
@@ -148,7 +133,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in blog">
+  <component name="RunManager" selected="Docker.blog-ms/Dockerfile">
     <configuration name="All in blog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blog" />
       <option name="PACKAGE_NAME" value="" />
@@ -205,9 +190,23 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="blog-ms/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="blog-ms/Dockerfile" />
+        </settings>
       </deployment>
       <method v="2" />
     </configuration>
@@ -237,38 +236,25 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="blog-ms.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="rabbitmq" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="blog-ms/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Docker.blog-ms/Dockerfile" />
       <item itemvalue="Docker.blog-ms.blog-service: Compose Deployment" />
       <item itemvalue="Docker.blog-ms.gateway: Compose Deployment" />
-      <item itemvalue="Docker.blog-ms.rabbitmq: Compose Deployment" />
       <item itemvalue="JUnit.All in blog" />
+      <item itemvalue="Spring Boot.ServiceRegApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.CommentMsApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.SearchMsApplication" />
-      <item itemvalue="Spring Boot.ServiceRegApplication" />
       <item itemvalue="Spring Boot.BlogApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.blog-ms/Dockerfile" />
         <item itemvalue="Spring Boot.BlogApplication" />
         <item itemvalue="JUnit.All in blog" />
         <item itemvalue="Docker.blog-ms.gateway: Compose Deployment" />
         <item itemvalue="Docker.blog-ms.blog-service: Compose Deployment" />
-        <item itemvalue="Docker.blog-ms.rabbitmq: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +282,27 @@
       <workItem from="1709101273712" duration="22052000" />
       <workItem from="1709128995430" duration="34270000" />
       <workItem from="1709289869029" duration="106000" />
-      <workItem from="1709290001109" duration="7388000" />
+      <workItem from="1709290001109" duration="13170000" />
+      <workItem from="1709543824663" duration="728000" />
+      <workItem from="1709557108098" duration="627000" />
+      <workItem from="1709629657471" duration="6270000" />
+      <workItem from="1709708586985" duration="1363000" />
+      <workItem from="1709711269663" duration="7000" />
+      <workItem from="1709711685108" duration="3036000" />
+      <workItem from="1709778494532" duration="1929000" />
+      <workItem from="1709808529695" duration="2179000" />
+      <workItem from="1709821059478" duration="639000" />
+      <workItem from="1709874044939" duration="13000" />
+      <workItem from="1709989955293" duration="2834000" />
+      <workItem from="1710037390047" duration="186000" />
+      <workItem from="1710037606531" duration="598000" />
+      <workItem from="1710038925153" duration="10000" />
+      <workItem from="1711603879601" duration="1306000" />
+      <workItem from="1711886486280" duration="2457000" />
+      <workItem from="1712590470108" duration="783000" />
+      <workItem from="1712591789934" duration="10296000" />
+      <workItem from="1712676595043" duration="2357000" />
+      <workItem from="1712738174396" duration="3506000" />
     </task>
     <task id="LOCAL-00001" summary="reduce the database config in application.yml">
       <option name="closed" value="true" />
@@ -418,7 +424,47 @@
       <option name="project" value="LOCAL" />
       <updated>1709285905898</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="compatible with Tags and Types, update DTO and Controller logic">
+      <option name="closed" value="true" />
+      <created>1709300309246</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709300309246</updated>
+    </task>
+    <task id="LOCAL-00017" summary="compatible with Tags and Types, update DTO and Controller logic">
+      <option name="closed" value="true" />
+      <created>1709302252109</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709302252109</updated>
+    </task>
+    <task id="LOCAL-00018" summary="compatible with Tags and Types, update DTO and Controller logic">
+      <option name="closed" value="true" />
+      <created>1709303263797</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709303263797</updated>
+    </task>
+    <task id="LOCAL-00019" summary="merge submodule blog-ms, compatible with Tags and Types, update DTO and Controller logic,">
+      <option name="closed" value="true" />
+      <created>1709303763059</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709303763059</updated>
+    </task>
+    <task id="LOCAL-00020" summary="revise the k8s for aws">
+      <option name="closed" value="true" />
+      <created>1712772934937</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1712772934937</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,6 +476,16 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/master" />
@@ -462,7 +518,10 @@
     <MESSAGE value="build all of ms in docker and debug&#10; No Docker Compose file found in directory 'C:\Users\liuyi\blog_micro\.'" />
     <MESSAGE value="fine tune blog service" />
     <MESSAGE value="Connect Next.Js frontend in homepage, adjust Controller logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connect Next.Js frontend in homepage, adjust Controller logic" />
+    <MESSAGE value="compatible with Tags and Types, update DTO and Controller logic" />
+    <MESSAGE value="merge submodule blog-ms, compatible with Tags and Types, update DTO and Controller logic," />
+    <MESSAGE value="revise the k8s for aws" />
+    <option name="LAST_COMMIT_MESSAGE" value="revise the k8s for aws" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
