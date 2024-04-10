@@ -15,7 +15,9 @@ spec:
     spec:
       containers:
         - name: blog
-          image: pengliuyi/blog-ms:latest
+          image: 301866137943.dkr.ecr.ap-northeast-1.amazonaws.com/pengliuyi/blog-ms:latest
+          #ECR image's URL
+          #image: pengliuyi/blog-ms:latest
           # ALWAYS will always pull the image from the docker remote registry
           imagePullPolicy: IfNotPresent
           ports:
@@ -24,6 +26,14 @@ spec:
             # here define it use application-k8s.yml
             - name: SPRING_PROFILES_ACTIVE
               value: k8s
+            - name: DB_HOST
+              value: eksdb-blog-ms.c3kiqg6wkjn8.ap-northeast-1.rds.amazonaws.com
+            - name: DB_USER
+              value: rootroot
+            - name: DB_PASSWORD
+              value: rootroot
+            - name: DB_DATABASE
+              value: b
       restartPolicy: Always
   selector:
     matchLabels: # decides on which Pods belongs to the given Deployment

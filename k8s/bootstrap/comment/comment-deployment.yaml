@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: comment
-          image: pengliuyi/comment-ms:latest
+          image: 301866137943.dkr.ecr.ap-northeast-1.amazonaws.com/pengliuyi/comment-ms:latest
+#          image: pengliuyi/comment-ms:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8082
